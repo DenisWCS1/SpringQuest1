@@ -4,8 +4,8 @@ import java.text.BreakIterator;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.fasterxml.jackson.databind.ser.std.StdKeySerializers.Default;
 
@@ -14,7 +14,7 @@ public class MainController {
 
     @GetMapping("/doctor/{id}")
     @ResponseBody
-    public String index(@PathVariable String id) {
+    public String doctor(@PathVariable String id) {
         String response;
         switch (id) {
             case "1":
